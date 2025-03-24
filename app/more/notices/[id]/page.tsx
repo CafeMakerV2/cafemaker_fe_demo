@@ -9,7 +9,7 @@ import { notices } from '../../../data/notices';
 const Container = styled.div`
   padding: 1rem;
   background-color: #f8f9fa;
-  min-height: 100vh;
+    min-height: 100%;
 `;
 
 const Content = styled.div`
@@ -59,7 +59,7 @@ export default function NoticeDetailPage() {
 
   if (!notice) {
     return (
-      <MobileLayout>
+      <MobileLayout showHomeBar={true}>
         <Container>
           <PageHeader title="공지사항" backUrl="/more/notices" />
           <Content>
@@ -71,7 +71,7 @@ export default function NoticeDetailPage() {
   }
 
   return (
-    <MobileLayout>
+    <MobileLayout showHomeBar={true}>
       <Container>
         <PageHeader title="공지사항" backUrl="/more/notices" />
         <Content>

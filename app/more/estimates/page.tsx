@@ -7,7 +7,7 @@ import PageHeader from '../../components/PageHeader';
 const Container = styled.div`
   padding: 1rem;
   background-color: #f8f9fa;
-  min-height: 100vh;
+    min-height: 100%;
 `;
 
 const Content = styled.div`
@@ -26,7 +26,7 @@ const EmptyMessage = styled.div`
 
 export default function EstimatesPage() {
   return (
-    <MobileLayout>
+    <MobileLayout showHomeBar={true}>
       <Container>
         <PageHeader title="내 예상 견적서 목록" backUrl="/more" />
 

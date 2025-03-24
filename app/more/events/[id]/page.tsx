@@ -10,7 +10,7 @@ import { events } from '../../../data/events';
 const Container = styled.div`
   padding: 1rem;
   background-color: #f8f9fa;
-  min-height: 100vh;
+    min-height: 100%;
 `;
 
 const Content = styled.div`
@@ -61,7 +61,7 @@ export default function EventDetailPage() {
 
   if (!event) {
     return (
-      <MobileLayout>
+      <MobileLayout showHomeBar={true}>
         <Container>
           <PageHeader title="이벤트 상세" backUrl="/more/events" />
           <Content>
@@ -73,7 +73,7 @@ export default function EventDetailPage() {
   }
 
   return (
-    <MobileLayout>
+    <MobileLayout showHomeBar={true}>
       <Container>
         <PageHeader title="이벤트 상세" backUrl="/more/events" />
         <Content>

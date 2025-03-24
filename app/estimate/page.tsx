@@ -79,8 +79,8 @@ const CurrentEstimateAmount = styled.div`
 
 const Content = styled.div<{ $showResult?: boolean }>`
   padding: 1rem;
-  min-height: calc(100vh - 200px);
-  // margin-top: 10rem;
+  overflow-y: auto;
+  height: ${({ $showResult }) => ($showResult ? 'calc(100vh - 230px)' : 'calc(100vh - 350px)')};
 `;
 
 const StepHeader = styled.div`
@@ -297,7 +297,6 @@ const TotalAmount = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 1.25rem 0;
-  margin-top: 1.5rem;
   border-top: 2px solid #e5e7eb;
   background-color: var(--primary-bg);
   margin: 1.5rem -2rem -2rem -2rem;

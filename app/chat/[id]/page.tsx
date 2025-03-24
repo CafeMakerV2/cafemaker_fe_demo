@@ -24,7 +24,7 @@ const MessageWrapper = styled.div<{ $isUser: boolean }>`
 const MessageBubble = styled.div<{ $isUser: boolean }>`
   max-width: 65%;
   border-radius: 0.5rem;
-  padding: 0.5rem
+  padding: 0.5rem;
   font-size: 1rem;
   word-break: break-word;
 

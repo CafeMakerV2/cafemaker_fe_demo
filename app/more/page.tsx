@@ -9,7 +9,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #f8f9fa;
-  //min-height: 100vh;
 `;
 
 const ProfileSection = styled.div`

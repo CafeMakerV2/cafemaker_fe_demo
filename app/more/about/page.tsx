@@ -8,7 +8,7 @@ import Image from 'next/image';
 const Container = styled.div`
   padding: 1rem;
   background-color: #f8f9fa;
-  min-height: 100vh;
+  min-height: 100%;
 `;
 
 const Content = styled.div`
@@ -73,7 +73,7 @@ const ContactItem = styled.div`
 
 export default function AboutPage() {
   return (
-    <MobileLayout>
+    <MobileLayout showHomeBar={true}>
       <Container>
         <PageHeader title="회사 소개" backUrl="/more" />
 

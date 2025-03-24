@@ -12,7 +12,7 @@ const BarContainer = styled.div`
   background-color: white;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
   padding-bottom: 1.5rem;
-  z-index: 2;
+  z-index: 999;
 `;
 
 const GridContainer = styled.div`

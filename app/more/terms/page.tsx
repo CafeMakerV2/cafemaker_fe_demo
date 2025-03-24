@@ -7,7 +7,7 @@ import PageHeader from '../../components/PageHeader';
 const Container = styled.div`
   padding: 1rem;
   background-color: #f8f9fa;
-  min-height: 100vh;
+    min-height: 100%;
 `;
 
 const Content = styled.div`
@@ -45,7 +45,7 @@ const Text = styled.p`
 
 export default function TermsPage() {
   return (
-    <MobileLayout>
+    <MobileLayout showHomeBar={true}>
       <Container>
         <PageHeader title="서비스 이용약관" backUrl="/more" />
 

@@ -10,7 +10,7 @@ import { events } from '../../data/events';
 const Container = styled.div`
   padding: 1rem;
   background-color: #f8f9fa;
-  min-height: 100vh;
+    min-height: 100%;
 `;
 
 const Content = styled.div`
@@ -79,7 +79,7 @@ export default function EventsPage() {
   const activeEvents = events.filter((event) => event.isActive);
 
   return (
-    <MobileLayout>
+    <MobileLayout showHomeBar={true}>
       <Container>
         <PageHeader title="이벤트" backUrl="/more" />
 

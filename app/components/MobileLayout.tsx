@@ -19,7 +19,6 @@ const Container = styled.div`
 
 const Content = styled.div<{ $showHomeBar: boolean }>`
   flex: 1;
-  overflow-y: auto;
 `;
 
 export default function MobileLayout({ children, showHomeBar = true }: MobileLayoutProps) {

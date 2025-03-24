@@ -10,7 +10,7 @@ const ChatContainer = styled.div`
   flex: 1;
   padding: 2rem 1rem;
   overflow-y: auto;
-  height: calc(100vh - 3.75rem);
+  height: calc(100vh - 16rem);
   position: relative;
   -webkit-overflow-scrolling: touch;
 `;
@@ -24,7 +24,7 @@ const MessageWrapper = styled.div<{ $isUser: boolean }>`
 const MessageBubble = styled.div<{ $isUser: boolean }>`
   max-width: 65%;
   border-radius: 0.5rem;
-  padding: 0.5rem
+  padding: 0.5rem;
   font-size: 1rem;
   word-break: break-word;
 
